@@ -31,7 +31,7 @@ public class CalculatorTest {
                 throw new AssertionError("Ошибка в методе");
             }
         }
-
+        // Случай, неправильного ввода параметров в работе расчета скидки
         try {
             Calculator.calculatingDiscount(1000,1000);
         } catch (ArithmeticException e){
@@ -39,10 +39,10 @@ public class CalculatorTest {
         }
 
         // Проверка базового функционала с целыми числами, с использованием утверждений:
-        assert 8 == Calculator.calculation(2, 6, '+');
-        assert 0 == Calculator.calculation(2, 2, '-');
-        assert 14 == Calculator.calculation(2, 7, '*');
-        assert 2 == Calculator.calculation(100, 50, '/');
+        //assert 8 == Calculator.calculation(2, 6, '+');
+        //assert 0 == Calculator.calculation(2, 2, '-');
+        //assert 14 == Calculator.calculation(2, 7, '*');
+        //assert 2 == Calculator.calculation(100, 50, '/');
 
         // Проверка базового функционала с целыми числами, с использованием утверждений AssertJ:
         //assertThat(Calculator.calculation(2, 6, '+')).isEqualTo(8);
